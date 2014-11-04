@@ -22,7 +22,7 @@ Celem projektu jest stworzenie portalu spolecznosciowego dla osob cwiczacych na 
 
 # Realization
 * Project contains:
-** Example of database in xml file
-** XML Schema for database - NOTE: This might not be the final version
-** Vision
+ * Example of database in xml file
+ * XML Schema for database - NOTE: This might not be the final version
+ * Vision
 
