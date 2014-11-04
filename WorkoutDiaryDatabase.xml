@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Andrzej Skrodzki -->
+<database 
+    xmlns="http://workout-diary.com" 
+    xmlns:xsi="http://workout-diary.com/XMLSchema-instance" 
+    xsi:schemaLocation="http://workout-diary.com DatabaseSchema.xsd ">
+    <users>
+        <user>
+            <name>Andrzej</name>
+            <icon>http://workout-diary.com/images/1.jpeg</icon>
+            <weight>78</weight>
+            <height>172</height>
+            <age>24</age>
+        </user>
+        <user>
+            <name>Arnold</name>
+            <icon>http://workout-diary.com/images/ar.jpeg</icon>
+            <weight>82</weight>
+            <height>182</height>
+            <age>23</age>
+        </user>
+    </users>
+    <trainings>
+        <training>
+            <name>Weider</name>
+            <description>Really intensive training for abs</description>
+            <photos>
+                <photo
+            </photos>
+        </training>
+    </trainings>
+</database>
