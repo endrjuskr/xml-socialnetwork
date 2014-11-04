@@ -1,4 +1,8 @@
-# Vision (in Polish)
+Workout diary - final project for `XML and Applications` course.
+============
+
+Overview (in Polish)
+---
 
 Celem projektu jest stworzenie portalu spolecznosciowego dla osob cwiczacych na silowni, inaczej mowiac dziennika kulturysty :).
 
@@ -20,9 +24,10 @@ Celem projektu jest stworzenie portalu spolecznosciowego dla osob cwiczacych na 
 
  W I fazie uzytkownik bedzie mial dostep tylko do swoich danych, lecz w przyszlosci jest zaplanowane dodanie udostepnienia dziennika. Dziennik jest rzecza personalna i ma na celu polepszenie wlasnych wynikow, a nie ogloszenie swiatu o swojej formie.
 
-# Realization
+Development
+---
 * Project contains:
  * Example of database in xml file
  * XML Schema for database - NOTE: This might not be the final version
- * Vision
+ * Overview
 
