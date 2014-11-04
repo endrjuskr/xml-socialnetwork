@@ -1,5 +1,6 @@
-Workout diary - final project for `XML and Applications` course.
+Workout diary
 ============
+This is the final project for `XML and Applications` course.
 
 Overview (in Polish)
 ---
