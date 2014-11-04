@@ -1,0 +1,21 @@
+{
+  "name": "WorkoutDiary",
+  "description": "The final project for XML and Application course",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/endrjuskr/xml-socialnetwork.git"
+  },
+  "author": "Andrzej Skrodzki",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "0.1.6",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-git": "~0.2.6",
+    "grunt-xml-validator": "1.1.1"
+  }
+}

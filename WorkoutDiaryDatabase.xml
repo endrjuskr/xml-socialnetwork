@@ -24,9 +24,6 @@
         <training>
             <name>Weider</name>
             <description>Really intensive training for abs</description>
-            <photos>
-                <photo
-            </photos>
         </training>
     </trainings>
 </database>
