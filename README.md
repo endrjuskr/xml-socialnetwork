@@ -10,7 +10,7 @@ W celu osiagniecia wymarzonych rezultatow wazna jest powtarzalnosc oraz rownomie
 
 W I fazie realizacji projekt bedzie sie skladal z aplikacji mobilnej oraz web serwisu.
 
-*Jak?
+* Jak?
 
 Klient loguje sie do aplikacji (najprawdopodobniej iOS) oraz widzi nastepujace rzeczy:
 ** profil, ktory moze edytowac
