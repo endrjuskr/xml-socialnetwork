@@ -20,10 +20,64 @@
             <age>23</age>
         </user>
     </users>
+    <exercises>
+        <exercise>
+            <name>Sit-up 3/4</name>
+            <description>
+                Regular sit-up
+            </description>
+            <difficulty>Easy</difficulty>
+            <unit>Count</unit>
+            <bodypart>Ab</bodypart>
+        </exercise>
+    </exercises>
     <trainings>
         <training>
             <name>Weider</name>
             <description>Really intensive training for abs</description>
+            <duration>60</duration>
+            <difficulty>hard</difficulty>
+            <parts>
+                <exercise>
+                    <name>Sit-up 3/4</name>
+                    <series>3</series>
+                    <break>0.5</break>
+                </exercise>
+            <parts>
         </training>
     </trainings>
+    <workouts>
+        <restday>
+            <user>Andrzej</user>
+            <date>2014 08 OCT</date>
+            <rate>4</rate>
+            <measurements>
+                <measurement>
+                    <name>Weight</name>
+                    <result>74</result>
+                </measurement>
+            </measurements>
+        </restday>
+        <workout>
+            <user>Andrzej</user>
+            <date>2014 09 OCT</date>
+            <rate>5</rate>
+            <activities>
+                <exercise>
+                    <name>Sit-up 3/4</name>
+                    <series>
+                        <serie count="10">
+                        <serie count="12">
+                        <serie count="15">
+                    <series>
+                </exercise>
+            </activities>
+            <measurements>
+                <measurement>
+                    <name>Weight</name>
+                    <result>73</result>
+                </measurement>
+            </measurements>
+        </workout>
+    </workouts>
 </database>
