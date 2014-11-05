@@ -13,6 +13,9 @@
 
   <xs:simpleType name="EMeasurment">
     <xs:restriction base="xs:string">
+      <xs:annotation>
+        <xs:documentation>TODO: Add more measurments</xs:documentation>
+      </xs:annotation>
       <xs:enumeration value="Weight" />
       <xs:enumeration value="HeartBits" />
     </xs:restriction>
@@ -20,6 +23,9 @@
 
   <xs:simpleType name="EBodyPart">
     <xs:restriction base="xs:string">
+      <xs:annotation>
+        <xs:documentation>TODO: Add more body parts</xs:documentation>
+      </xs:annotation>
       <xs:enumeration value="Ab" />
       <xs:enumeration value="Arm" />
       <xs:enumeration value="Back" />
@@ -38,6 +44,9 @@
 
   <xs:simpleType name="EUnit">
     <xs:restriction base="xs:string">
+      <xs:annotation>
+        <xs:documentation>TODO: Add more units</xs:documentation>
+      </xs:annotation>
       <xs:enumeration value="Quantity" />
       <xs:enumeration value="Distance" />
       <xs:enumeration value="Weight" />

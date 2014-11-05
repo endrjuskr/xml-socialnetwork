@@ -92,7 +92,12 @@
       <xs:element name="description" type="xs:string"/>
       <xs:element name="duration" type="xs:short" />
       <xs:element name="difficulty" type="wd:EDifficulty" />
-      <xs:element name="parts" type="wd:PartsType" />
+      <xs:element name="parts" type="wd:PartsType">
+        <xs:unique name="PartsOfTraining">
+          <xs:selector xpath="exercise/name" />
+          <xs:field xpath="." />
+        </xs:unique>    
+      </xs:element>
       <xs:element name="photos" type="wd:PhotosType" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
@@ -109,13 +114,23 @@
                        
   <xs:complexType name="MeasurementsType">
     <xs:sequence>
-      <xs:element name="measurement" type="wd:MeasurmentType" />
+      <xs:element name="measurement" type="wd:MeasurmentType" minOccurs="1" maxOccurs="unbounded">
+        <xs:unique name="DifferentMeasurments">
+          <xs:selector xpath="name" />
+          <xs:field xpath="." />
+        </xs:unique>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>  
 
   <xs:complexType name="PhotosType">
     <xs:sequence>
-      <xs:element name="photo" type="wd:PhotoType" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="photo" type="wd:PhotoType" minOccurs="1" maxOccurs="unbounded">
+        <xs:unique name="PhotoTitles">
+          <xs:selector xpath="title" />
+          <xs:field xpath="." />
+        </xs:unique>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>    
 
