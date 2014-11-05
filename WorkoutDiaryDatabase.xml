@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Author: Andrzej Skrodzki -->
 <database 
     xmlns="http://workout-diary.com" 
-    xmlns:xsi="http://workout-diary.com/XMLSchema-instance" 
-    xsi:schemaLocation="http://workout-diary.com DatabaseSchema.xsd ">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://workout-diary.com WorkoutDiaryDatabaseSchema.xsd ">
     <users>
         <user>
             <name>Andrzej</name>
@@ -27,8 +26,14 @@
                 Regular sit-up
             </description>
             <difficulty>Easy</difficulty>
-            <unit>Count</unit>
+            <unit>Quantity</unit>
             <bodypart>Ab</bodypart>
+            <photos>
+                <photo>
+                    <title>Main</title>
+                    <image>http://testurl.com/1.jpg</image>
+                </photo>
+            </photos>
         </exercise>
     </exercises>
     <trainings>
@@ -36,20 +41,26 @@
             <name>Weider</name>
             <description>Really intensive training for abs</description>
             <duration>60</duration>
-            <difficulty>hard</difficulty>
+            <difficulty>Hard</difficulty>
             <parts>
                 <exercise>
                     <name>Sit-up 3/4</name>
                     <series>3</series>
                     <break>0.5</break>
                 </exercise>
-            <parts>
+            </parts>
+            <photos>
+                <photo>
+                    <title>Main</title>
+                    <image>http://testurl.com/1.jpg</image>
+                </photo>
+            </photos>
         </training>
     </trainings>
     <workouts>
         <restday>
             <user>Andrzej</user>
-            <date>2014 08 OCT</date>
+            <date>2014-09-24</date>
             <rate>4</rate>
             <measurements>
                 <measurement>
@@ -57,27 +68,33 @@
                     <result>74</result>
                 </measurement>
             </measurements>
+            <photos>
+                <photo>
+                    <title>Main</title>
+                    <image>http://testurl.com/1.jpg</image>
+                </photo>
+            </photos>
         </restday>
         <workout>
             <user>Andrzej</user>
-            <date>2014 09 OCT</date>
+            <date>2014-09-25</date>
             <rate>5</rate>
-            <activities>
-                <exercise>
-                    <name>Sit-up 3/4</name>
-                    <series>
-                        <serie count="10">
-                        <serie count="12">
-                        <serie count="15">
-                    <series>
-                </exercise>
-            </activities>
             <measurements>
                 <measurement>
                     <name>Weight</name>
                     <result>73</result>
                 </measurement>
             </measurements>
+            <exercises>
+                <exercise>
+                    <name>Sit-up 3/4</name>
+                    <series>
+                        <serie count="10" />
+                        <serie count="12" />
+                        <serie count="15" />
+                    </series>
+                </exercise>
+            </exercises>
         </workout>
     </workouts>
 </database>

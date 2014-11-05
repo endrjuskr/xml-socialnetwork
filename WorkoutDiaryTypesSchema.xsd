@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://workout-diary.com"
+  xmlns:wd="http://workout-diary.com"
+  elementFormDefault="qualified">
+
+  <xs:include schemaLocation="WorkoutDiaryEnumSchema.xsd"/>
+  
+  <xs:complexType name="ExerciseType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="description" type="xs:string" />
+      <xs:element name="difficulty" type="wd:EDifficulty" />
+      <xs:element name="unit" type="wd:EUnit" />
+      <xs:element name="bodypart" type="wd:EBodyPart" />
+      <xs:element name="photos" type="wd:PhotosType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MeasurmentType">
+    <xs:sequence>
+      <xs:element name="name" type="wd:EMeasurment" />
+      <xs:element name="result" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UserType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="icon" type="xs:anyURI" />
+      <xs:element name="weight" type="xs:short" />
+      <xs:element name="height" type="xs:short" />
+      <xs:element name="age" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExerciseActivityType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="series" type="wd:SeriesType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExerciseActivitiesType">
+    <xs:sequence>
+      <xs:element name="exercise" type="wd:ExerciseActivityType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SeriesType">
+    <xs:sequence>
+      <xs:element name="serie" type="wd:SerieType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PartsType">
+    <xs:sequence>
+      <xs:element name="exercise" type="wd:TrainingExerciseType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TrainingExerciseType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="series" type="xs:byte" />
+      <xs:element name="break" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SerieType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="count" use="optional"/>
+        <xs:attribute type="xs:short" name="intensity" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="RestDayType">
+    <xs:sequence>
+      <xs:element name="user" type="xs:string" />
+      <xs:element name="date" type="xs:date"/>
+      <xs:element name="rate" type="wd:ERate"/>
+      <xs:element name="measurements" type="wd:MeasurementsType" />
+      <xs:element name="photos" type="wd:PhotosType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TrainingType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="duration" type="xs:short" />
+      <xs:element name="difficulty" type="wd:EDifficulty" />
+      <xs:element name="parts" type="wd:PartsType" />
+      <xs:element name="photos" type="wd:PhotosType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WorkoutType">
+    <xs:complexContent>
+      <xs:extension base="wd:RestDayType">
+        <xs:sequence>
+          <xs:element name="exercises" type="wd:ExerciseActivitiesType"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+                       
+  <xs:complexType name="MeasurementsType">
+    <xs:sequence>
+      <xs:element name="measurement" type="wd:MeasurmentType" />
+    </xs:sequence>
+  </xs:complexType>  
+
+  <xs:complexType name="PhotosType">
+    <xs:sequence>
+      <xs:element name="photo" type="wd:PhotoType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>    
+
+  <xs:complexType name="PhotoType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="image" type="xs:anyURI" />
+      <xs:element name="date" type="xs:date" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

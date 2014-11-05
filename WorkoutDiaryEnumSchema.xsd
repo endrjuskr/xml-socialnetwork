@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://workout-diary.com"
+  elementFormDefault="qualified">
+
+  <xs:simpleType name="EDifficulty">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Easy" />
+      <xs:enumeration value="Medium" />
+      <xs:enumeration value="Hard" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EMeasurment">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Weight" />
+      <xs:enumeration value="HeartBits" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EBodyPart">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ab" />
+      <xs:enumeration value="Arm" />
+      <xs:enumeration value="Back" />
+      <xs:enumeration value="Chest" />
+      <xs:enumeration value="UpperLeg" />
+      <xs:enumeration value="LowerLeg" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ERate">
+    <xs:restriction base="xs:unsignedByte">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="5" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EUnit">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Quantity" />
+      <xs:enumeration value="Distance" />
+      <xs:enumeration value="Weight" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

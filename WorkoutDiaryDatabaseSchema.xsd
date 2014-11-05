@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://workout-diary.com"
+  xmlns:wd="http://workout-diary.com"
+  elementFormDefault="qualified">
+
+  <xs:include schemaLocation="WorkoutDiaryTypesSchema.xsd"/>
+
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="wd:User" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="User">
+    <xs:sequence>
+      <xs:element name="user" type="wd:UserType" />
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:element name="exercises">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="wd:Exercise" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Exercise">
+    <xs:sequence>
+        <xs:element name="exercise" type="wd:ExerciseType" />
+    </xs:sequence>
+  </xs:group> 
+  
+  <xs:element name="trainings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="wd:Training" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Training">
+    <xs:sequence>
+        <xs:element name="training" type="wd:TrainingType" />
+    </xs:sequence>
+  </xs:group> 
+  
+  <xs:element name="workouts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="wd:Workout" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Workout">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="workout" type="wd:WorkoutType" />
+        <xs:element name="restday" type="wd:RestDayType" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:element name="database">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="wd:users" />
+        <xs:element ref="wd:exercises" />
+        <xs:element ref="wd:trainings" />
+        <xs:element ref="wd:workouts" />
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:key name="UserKey">
+      <xs:selector xpath="wd:Users/wd:User" />
+      <xs:field xpath="wd:Name" />
+    </xs:key>
+    <xs:key name="ExerciseKey">
+      <xs:selector xpath="wd:Exercises/wd:Exercise"/>
+      <xs:field xpath="wd:Name"/>
+    </xs:key>
+    <xs:key name="TrainingKey">
+      <xs:selector xpath="wd:Trainings/wd:Training" />
+      <xs:field xpath="wd:Name"/>
+    </xs:key>
+    <xs:key name="WorkoutKey">
+      <xs:selector xpath="wd:Workouts/wd:Workout | wd:Workouts/wd:RestDay" />
+      <xs:field xpath="Date" />
+      <xs:field xpath="wd:User" />
+    </xs:key>
+    <xs:keyref name="ExercisesInTraining" refer="wd:ExerciseKey">
+      <xs:selector xpath="wd:Trainings/wd:Training/wd:Exercises/wd:Exercise"/>
+      <xs:field xpath="."/>
+    </xs:keyref>
+    <xs:keyref name="ExercisesInWorkout" refer="wd:ExerciseKey">
+      <xs:selector xpath="wd:Workouts/wd:Workout/wd:Activities/wd:Activity/wd:Exercise" />
+      <xs:field xpath="." />
+    </xs:keyref>
+  </xs:element>     
+</xs:schema>
