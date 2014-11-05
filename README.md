@@ -28,7 +28,10 @@ Celem projektu jest stworzenie portalu spolecznosciowego dla osob cwiczacych na 
 Development
 ---
 * Project contains:
- * Example of database in xml file
- * XML Schema for database - NOTE: This might not be the final version
+ * `WorkoutDiaryDatabase.xml` - example of database in xml file
+ * XML Schema for database(NOTE: This might not be the final version):
+  * `WorkoutDiaryDatabaseSchema.xsd` - schema for tables
+  * `WorkoutDiaryEnumSchema.xsd` - schema of enums in database
+  * `WorkoutDiaryTypesSchema.xsd` - schema of complex types in database
  * Overview
 
