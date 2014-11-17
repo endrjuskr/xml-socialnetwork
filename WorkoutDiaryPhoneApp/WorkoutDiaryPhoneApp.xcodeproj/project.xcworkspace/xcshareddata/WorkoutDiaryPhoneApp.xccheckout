@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C51D997D-5FC6-4DDC-9BC3-61564B1B5BEA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WorkoutDiaryPhoneApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B4C8E1724873550FC96A99454049EA0ECFE4D9AC</key>
+		<string>github.com:endrjuskr/xml-socialnetwork.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WorkoutDiaryPhoneApp/WorkoutDiaryPhoneApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B4C8E1724873550FC96A99454049EA0ECFE4D9AC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:endrjuskr/xml-socialnetwork.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B4C8E1724873550FC96A99454049EA0ECFE4D9AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B4C8E1724873550FC96A99454049EA0ECFE4D9AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>xml-socialnetwork</string>
+		</dict>
+	</array>
+</dict>
+</plist>
