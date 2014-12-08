@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-continuation-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-http-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-io-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-security-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-server-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-servlet-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/jetty-util-7.6.0.v20120127.jar"/>
-	<classpathentry kind="lib" path="target/dependency/postgresql-9.0-801.jdbc4.jar"/>
-	<classpathentry kind="lib" path="target/dependency/servlet-api-2.5.jar"/>
-	<classpathentry kind="lib" path="target/helloworld-1.0-SNAPSHOT.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="target/classes"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
