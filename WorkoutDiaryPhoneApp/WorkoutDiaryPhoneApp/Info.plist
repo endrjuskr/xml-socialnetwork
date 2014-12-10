@@ -25,6 +25,7 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>Andrzej-Skrodzki.WorkoutDiaryPhoneApp</string>
 				<string>fb00000000000000</string>
 			</array>
 		</dict>

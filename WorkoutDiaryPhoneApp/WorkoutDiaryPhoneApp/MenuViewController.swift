@@ -7,16 +7,31 @@
 //
 
 import UIKit
+import AddressBook
+import MediaPlayer
+import AssetsLibrary
+import CoreLocation
+import CoreMotion
 
-class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FBLoginViewDelegate {
+class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FBLoginViewDelegate, GPPSignInDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
+    @IBOutlet var signInGoogleP : GPPSignIn?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
-        // Do any additional setup after loading the view, typically from a nib.
+
+        signInGoogleP = GPPSignIn.sharedInstance()
+        signInGoogleP?.shouldFetchGooglePlusUser = true
+        signInGoogleP?.clientID = "clientID"
+        signInGoogleP?.scopes = [ kGTLAuthScopePlusLogin ];
+        signInGoogleP?.delegate = self;
+    }
+    
+    func finishedWithAuth(auth: GTMOAuth2Authentication!, error: NSError!) {
+        println(auth)
     }
     
     func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
