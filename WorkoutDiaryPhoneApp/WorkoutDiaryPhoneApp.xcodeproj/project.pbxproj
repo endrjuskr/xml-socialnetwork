@@ -41,6 +41,7 @@
 		1AA2288D1A19883A00268F59 /* WorkoutDiaryPhoneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutDiaryPhoneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA228921A19883A00268F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA228931A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDiaryPhoneAppTests.swift; sourceTree = "<group>"; };
+		1AC30A311A381A630054B7D3 /* Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		4F3750B4F0D83906028C7558 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE5C9685D507E165278F4EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EDBE5008C542D0938B901B4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 				1AA228861A19883A00268F59 /* LaunchScreen.xib */,
 				1AA228771A19883A00268F59 /* Supporting Files */,
 				1A8AE0FE1A33C39300524336 /* LoginViewController.swift */,
+				1AC30A311A381A630054B7D3 /* Bridging-Header.h */,
 			);
 			path = WorkoutDiaryPhoneApp;
 			sourceTree = "<group>";
@@ -409,6 +411,7 @@
 				INFOPLIST_FILE = WorkoutDiaryPhoneApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorkoutDiaryPhoneApp/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -421,6 +424,7 @@
 				INFOPLIST_FILE = WorkoutDiaryPhoneApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorkoutDiaryPhoneApp/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
