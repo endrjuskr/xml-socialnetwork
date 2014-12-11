@@ -10,11 +10,20 @@
 		1A8AE0FF1A33C39300524336 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AE0FE1A33C39300524336 /* LoginViewController.swift */; };
 		1AA2287A1A19883A00268F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA228791A19883A00268F59 /* AppDelegate.swift */; };
 		1AA2287E1A19883A00268F59 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2287D1A19883A00268F59 /* MenuViewController.swift */; };
-		1AA228801A19883A00268F59 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2287F1A19883A00268F59 /* ModelController.swift */; };
 		1AA228831A19883A00268F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA228811A19883A00268F59 /* Main.storyboard */; };
 		1AA228851A19883A00268F59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA228841A19883A00268F59 /* Images.xcassets */; };
 		1AA228881A19883A00268F59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA228861A19883A00268F59 /* LaunchScreen.xib */; };
 		1AA228941A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA228931A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift */; };
+		1AD9BD771A397BD800402369 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD761A397BD800402369 /* ExerciseListViewController.swift */; };
+		1AD9BD791A397C2500402369 /* TrainingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD781A397C2500402369 /* TrainingListViewController.swift */; };
+		1AD9BD7B1A397C4D00402369 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD7A1A397C4D00402369 /* ExerciseViewController.swift */; };
+		1AD9BD7D1A397C5D00402369 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD7C1A397C5D00402369 /* TrainingViewController.swift */; };
+		1AD9BD7F1A397C7600402369 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD7E1A397C7600402369 /* WorkoutViewController.swift */; };
+		1AD9BD811A397C9E00402369 /* WorkoutHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD801A397C9E00402369 /* WorkoutHistoryViewController.swift */; };
+		1AD9BD831A397CB700402369 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD821A397CB700402369 /* SettingsViewController.swift */; };
+		1AD9BD851A397CCE00402369 /* NewExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD841A397CCE00402369 /* NewExerciseViewController.swift */; };
+		1AD9BD871A397CDC00402369 /* NewTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD861A397CDC00402369 /* NewTrainingViewController.swift */; };
+		1AD9BD891A397CF100402369 /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD881A397CF100402369 /* NewWorkoutViewController.swift */; };
 		8C976C885CB9915DC95B3E8A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3750B4F0D83906028C7558 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +43,6 @@
 		1AA228781A19883A00268F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA228791A19883A00268F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AA2287D1A19883A00268F59 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		1AA2287F1A19883A00268F59 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		1AA228821A19883A00268F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AA228841A19883A00268F59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AA228871A19883A00268F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +50,16 @@
 		1AA228921A19883A00268F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA228931A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDiaryPhoneAppTests.swift; sourceTree = "<group>"; };
 		1AC30A311A381A630054B7D3 /* Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1AD9BD761A397BD800402369 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		1AD9BD781A397C2500402369 /* TrainingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingListViewController.swift; sourceTree = "<group>"; };
+		1AD9BD7A1A397C4D00402369 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		1AD9BD7C1A397C5D00402369 /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		1AD9BD7E1A397C7600402369 /* WorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		1AD9BD801A397C9E00402369 /* WorkoutHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryViewController.swift; sourceTree = "<group>"; };
+		1AD9BD821A397CB700402369 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1AD9BD841A397CCE00402369 /* NewExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExerciseViewController.swift; sourceTree = "<group>"; };
+		1AD9BD861A397CDC00402369 /* NewTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTrainingViewController.swift; sourceTree = "<group>"; };
+		1AD9BD881A397CF100402369 /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
 		4F3750B4F0D83906028C7558 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE5C9685D507E165278F4EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EDBE5008C542D0938B901B4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,13 +109,22 @@
 			children = (
 				1AA228791A19883A00268F59 /* AppDelegate.swift */,
 				1AA2287D1A19883A00268F59 /* MenuViewController.swift */,
-				1AA2287F1A19883A00268F59 /* ModelController.swift */,
 				1AA228811A19883A00268F59 /* Main.storyboard */,
 				1AA228841A19883A00268F59 /* Images.xcassets */,
 				1AA228861A19883A00268F59 /* LaunchScreen.xib */,
 				1AA228771A19883A00268F59 /* Supporting Files */,
 				1A8AE0FE1A33C39300524336 /* LoginViewController.swift */,
 				1AC30A311A381A630054B7D3 /* Bridging-Header.h */,
+				1AD9BD761A397BD800402369 /* ExerciseListViewController.swift */,
+				1AD9BD781A397C2500402369 /* TrainingListViewController.swift */,
+				1AD9BD7A1A397C4D00402369 /* ExerciseViewController.swift */,
+				1AD9BD7C1A397C5D00402369 /* TrainingViewController.swift */,
+				1AD9BD7E1A397C7600402369 /* WorkoutViewController.swift */,
+				1AD9BD801A397C9E00402369 /* WorkoutHistoryViewController.swift */,
+				1AD9BD821A397CB700402369 /* SettingsViewController.swift */,
+				1AD9BD841A397CCE00402369 /* NewExerciseViewController.swift */,
+				1AD9BD861A397CDC00402369 /* NewTrainingViewController.swift */,
+				1AD9BD881A397CF100402369 /* NewWorkoutViewController.swift */,
 			);
 			path = WorkoutDiaryPhoneApp;
 			sourceTree = "<group>";
@@ -279,10 +306,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD9BD771A397BD800402369 /* ExerciseListViewController.swift in Sources */,
+				1AD9BD7B1A397C4D00402369 /* ExerciseViewController.swift in Sources */,
+				1AD9BD831A397CB700402369 /* SettingsViewController.swift in Sources */,
+				1AD9BD7D1A397C5D00402369 /* TrainingViewController.swift in Sources */,
+				1AD9BD7F1A397C7600402369 /* WorkoutViewController.swift in Sources */,
+				1AD9BD891A397CF100402369 /* NewWorkoutViewController.swift in Sources */,
 				1A8AE0FF1A33C39300524336 /* LoginViewController.swift in Sources */,
-				1AA228801A19883A00268F59 /* ModelController.swift in Sources */,
+				1AD9BD791A397C2500402369 /* TrainingListViewController.swift in Sources */,
 				1AA2287E1A19883A00268F59 /* MenuViewController.swift in Sources */,
 				1AA2287A1A19883A00268F59 /* AppDelegate.swift in Sources */,
+				1AD9BD811A397C9E00402369 /* WorkoutHistoryViewController.swift in Sources */,
+				1AD9BD871A397CDC00402369 /* NewTrainingViewController.swift in Sources */,
+				1AD9BD851A397CCE00402369 /* NewExerciseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
