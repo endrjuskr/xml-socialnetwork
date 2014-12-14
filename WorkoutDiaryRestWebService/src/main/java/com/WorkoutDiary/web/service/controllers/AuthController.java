@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.WorkoutDiary.web.service.models.*;
 
 @RestController
+@RequestMapping("/service/auth") 
 public class AuthController {
-    @RequestMapping("/auth")
+    @RequestMapping("/login")
     public boolean login(@RequestParam(value="userID") String name, @RequestParam(value="authMethod") AuthMethods method) {
         return true;
     }
