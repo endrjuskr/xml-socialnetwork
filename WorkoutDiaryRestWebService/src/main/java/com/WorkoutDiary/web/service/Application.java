@@ -21,6 +21,7 @@ public class Application {
         Database database = (Database) cl.newInstance();
         database.setProperty("create-database", "true");
         DatabaseManager.registerDatabase(database);
+        
         SpringApplication.run(Application.class, args);
     }
 }

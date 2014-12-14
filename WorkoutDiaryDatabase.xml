@@ -2,7 +2,7 @@
 <database 
     xmlns="http://workout-diary.com" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://workout-diary.com WorkoutDiaryDatabaseSchema.xsd ">
+    xsi:noNamespaceSchemaLocation="WorkoutDiaryDatabaseSchema.xsd">
     <users>
         <user>
             <name>Andrzej</name>
