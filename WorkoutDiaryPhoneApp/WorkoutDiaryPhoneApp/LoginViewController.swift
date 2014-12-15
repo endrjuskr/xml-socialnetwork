@@ -28,12 +28,11 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
 
     @IBAction func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
         println("User ID: \(user.objectID)")
-        self.performSegueWithIdentifier("testS", sender: nil)
         let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
 
         menuViewController.userID = user.objectID
 
-        self.navigationController?.pushViewController(menuViewController, animated: true)
+        self.performSegueWithIdentifier("ShowMenuView", sender: nil)
     }
 
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {

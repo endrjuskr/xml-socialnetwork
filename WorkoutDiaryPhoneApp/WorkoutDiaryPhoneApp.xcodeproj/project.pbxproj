@@ -14,6 +14,7 @@
 		1AA228851A19883A00268F59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA228841A19883A00268F59 /* Images.xcassets */; };
 		1AA228881A19883A00268F59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA228861A19883A00268F59 /* LaunchScreen.xib */; };
 		1AA228941A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA228931A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift */; };
+		1AD8B2891A3ECA3900548309 /* icon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD8B2881A3ECA3900548309 /* icon_2.png */; };
 		1AD9BD771A397BD800402369 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD761A397BD800402369 /* ExerciseListViewController.swift */; };
 		1AD9BD791A397C2500402369 /* TrainingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD781A397C2500402369 /* TrainingListViewController.swift */; };
 		1AD9BD7B1A397C4D00402369 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9BD7A1A397C4D00402369 /* ExerciseViewController.swift */; };
@@ -50,6 +51,7 @@
 		1AA228921A19883A00268F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA228931A19883A00268F59 /* WorkoutDiaryPhoneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDiaryPhoneAppTests.swift; sourceTree = "<group>"; };
 		1AC30A311A381A630054B7D3 /* Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1AD8B2881A3ECA3900548309 /* icon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_2.png; path = ../../../../Documents/icon_2.png; sourceTree = "<group>"; };
 		1AD9BD761A397BD800402369 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
 		1AD9BD781A397C2500402369 /* TrainingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingListViewController.swift; sourceTree = "<group>"; };
 		1AD9BD7A1A397C4D00402369 /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		1AA228761A19883A00268F59 /* WorkoutDiaryPhoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				1AD8B2871A3ECA1F00548309 /* Assets */,
 				1AA228791A19883A00268F59 /* AppDelegate.swift */,
 				1AA2287D1A19883A00268F59 /* MenuViewController.swift */,
 				1AA228811A19883A00268F59 /* Main.storyboard */,
@@ -152,6 +155,14 @@
 				1AA228921A19883A00268F59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AD8B2871A3ECA1F00548309 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8B2881A3ECA3900548309 /* icon_2.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		BB8346C5ECD727B16222A4CD /* Pods */ = {
@@ -256,6 +267,7 @@
 				1AA228831A19883A00268F59 /* Main.storyboard in Resources */,
 				1AA228881A19883A00268F59 /* LaunchScreen.xib in Resources */,
 				1AA228851A19883A00268F59 /* Images.xcassets in Resources */,
+				1AD8B2891A3ECA3900548309 /* icon_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
